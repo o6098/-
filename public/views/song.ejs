@@ -1,0 +1,13 @@
+<% if (userinfos.length){ %>
+  <ul>
+    <% userinfos.forEach(function(userinfo){ %>
+      <div class="songContent">
+        <li><a href="https://www.youtube.com/watch?v=<%= userinfo['link'] %>" target="_blank">
+          <img src="https://i.ytimg.com/vi/<%= userinfo['link'] %>/mqdefault.jpg" alt=""></a>
+          <a href="" class = 'del' rel=<%= userinfo['_id'] %>>X</a><br />
+          <a href="" class = 'update' rel=<%= userinfo['_id'] %>>【初音ミク】<%= userinfo['name'] %>【<%= userinfo['producer'] %>】</a>
+        </li>
+      </div>
+    <% }) %>
+  </ul>
+<% } %>

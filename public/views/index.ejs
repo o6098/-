@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>咪哭NO內部資料褲</title>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+  <script src="js/ejs_0.9_alpha_1_production.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sel">
+    <select id="sel" name="select">
+      <option value="">請選擇</option>
+      <option value="song">YouTube影片分享</option>
+      <option value="pixiv">Pixiv圖片分享</option>
+      <option value="nendoroid">黏土人介紹</option>
+    </select>
+  </div>
+  <div id="create">
+
+  </div>
+  <div id= "songinfo">
+    <%- include('song'); %>
+  </div>
+  <div id="update"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

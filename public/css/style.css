@@ -1,0 +1,15 @@
+.song {
+	display: inline-block;
+	width: 180px;
+}
+
+li{
+	list-style: none;
+}
+
+.songContent{
+	position: relative;
+	float:left;
+	width: 23%;
+	margin: 1%;
+}
